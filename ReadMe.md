@@ -4,5 +4,7 @@
 
 ![](./assets/nnl.png)
 
+TODO: more detailed description
+
 ## [Channel](http://mattermost.local:8065/homework/channels/inference-models-on-small-memory-cuda-devices)
 
