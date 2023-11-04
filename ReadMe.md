@@ -45,8 +45,8 @@ This program can be compiled by this command:
 make gpt2_1558m
 ```
 
-After downloading all the weights from the release of this repo, we can run this program with a prompt such as
-To execute it, we can run the following command on a low-end GPU platform such as GTX 1050 (2 GB memory):
+After downloading all the weights from the [release](https://github.com/fengwang/nnl/releases/tag/0.0.1), we can run the following command on a low-end GPU platform such as GTX 1050 (2 GB memory):
+
 ```bash
 ./bin/gpt2_1558m --max_len 20  "Hi. My name is Feng and I am a machine learning engineer"
 ```
