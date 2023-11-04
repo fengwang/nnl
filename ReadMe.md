@@ -2,6 +2,15 @@
 ----------------------
 NNL is a low-latency and high-performance inference engine for large models on low-memory GPU platform.
 
+
+## Contents
+- [Introduction](#introduction)
+- [Build the library](#build-the-library)
+- [GPT2-XL Example](#gpt2-xl-example)
+- [Roadmap](#roadmap)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 ## Introduction
 
 Big models are too large to fit into the GPU memory.
@@ -10,7 +19,7 @@ NNL addresses this problem with a trade-off between PCIE bandwidth and memory.
 A typical inference pipeline is as follows:
 1. compose the computation graph with a [model](https://github.com/fengwang/nnl/blob/676977d6793926d922dd7a97c487ec3e0caee856/include/direct_space/model.hpp#L15)
 2. topological sort each node in the computation graph to make [a computation table](https://github.com/fengwang/nnl/blob/676977d6793926d922dd7a97c487ec3e0caee856/include/direct_space/model.hpp#L131C53-L131C53)
-3. for i in [1, 2, 3, ...]:
+3. for i in [1, 2, 3, ..., n]:
     - execute [the following tasks asynchronously](https://github.com/fengwang/nnl/blob/676977d6793926d922dd7a97c487ec3e0caee856/include/direct_space/model.hpp#L153)
         + compute the output of node i
         + load the weights to GPU for node i+1
