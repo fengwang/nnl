@@ -1,6 +1,6 @@
 # NeuralNet Logic
 ----------------------
-NNL is a low-latency and high-performance inference engine for large models on low-memory GPU platform.
+NNL is an inference engine for large models on low-memory GPU platform.
 
 
 ## Contents
